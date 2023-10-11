@@ -1,0 +1,15 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh
+}
+
+.app {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+img {
+  width: 200px;
+}
