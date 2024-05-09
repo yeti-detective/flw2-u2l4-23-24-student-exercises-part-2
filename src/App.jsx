@@ -16,13 +16,10 @@ export default function App() {
   const [currentPhoto, setCurrentPhoto] = useState(photos[counter]);
 
   function getNextPhoto() {
-    counter += 1;
-    if (counter >= photos.length) {
-      counter = 0;
-    }
+    // counter += 1;
     // 3. Update state using the setter function. 
     //  - It should update the pic when the button is clicked.
-    setCurrentPhoto(photos[counter]);
+    setCurrentPhoto(photos[counter++ % 3]);
   }
 
   // 4. In the button tag, set the value of`onClick` to the `getNextPhoto` function.
